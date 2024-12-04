@@ -43,7 +43,7 @@ BERT Cosine Similarity Distribution without punctuation
 
 ### **First Image: BERT Cosine Similarity Distribution**
 
-![BERT Cosine Similarity Distribution without punctuation](images/BERT Cosine Similarity Distribution without punctuation.png)
+![BERT Cosine Similarity Distribution without punctuation](images/images/BERT Cosine Similarity Distribution without punctuation.png)
 
 - **Description**: 
   - This image shows the cosine similarity distribution for the BERT model in without punctuation situation.
