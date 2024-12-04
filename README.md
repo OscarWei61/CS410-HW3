@@ -31,17 +31,20 @@ Given the lower mean RMSE and comparable stability, **tanh** is the better choic
 
 ### **Question2**
 
-### **Data with puntuation**
+### **Data without puntuation**
 
-In the situation, the data with punctuation
+In the situation, the data without punctuation
 BERT Accuracy: 0.0046058691933149095
 GPT-2 Accuracy: 0.23042505592841164
 
 GPT-2 perform more better!
-
+BERT Cosine Similarity Distribution without punctuation
 ---
 
 ### **First Image: BERT Cosine Similarity Distribution**
+
+![BERT Cosine Similarity Distribution without punctuation](images/BERT Cosine Similarity Distribution without punctuation.png)
+
 - **Description**: 
   - This image shows the cosine similarity distribution for the BERT model in without punctuation situation.
   - Most cosine similarity values are clustered around 1.0, indicating that BERT predicts many pairs of word embeddings with very high similarity.
