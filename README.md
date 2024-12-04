@@ -1,3 +1,4 @@
+Question1
 
 Not including Stopword
 Mean RMSE (tanh): 0.22068321704864502, Mean RMSE (ReLU): 0.2502865493297577
@@ -27,3 +28,10 @@ Based on the given results, here’s the analysis:
 
 ### **Conclusion**
 Given the lower mean RMSE and comparable stability, **tanh** is the better choice of activation function for this dataset and task. It minimizes prediction errors while maintaining consistent performance, making it more suitable for further experimentation or application.
+
+Question2
+
+with punction
+BERT Accuracy: 0.0046058691933149095
+GPT-2 Accuracy: 0.23042505592841164
+
