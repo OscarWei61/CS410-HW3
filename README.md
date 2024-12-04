@@ -38,12 +38,14 @@ BERT Accuracy: 0.0046058691933149095
 GPT-2 Accuracy: 0.23042505592841164
 
 GPT-2 perform more better!
+
 BERT Cosine Similarity Distribution without punctuation
+
 ---
 
 ### **First Image: BERT Cosine Similarity Distribution**
 
-![BERT Cosine Similarity Distribution without punctuation](images/images/BERT Cosine Similarity Distribution without punctuation.png)
+![BERT Cosine Similarity Distribution without punctuation](images/BERT_Cosine_Similarity_Distribution_without_punctuation.png)
 
 - **Description**: 
   - This image shows the cosine similarity distribution for the BERT model in without punctuation situation.
