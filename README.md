@@ -101,3 +101,70 @@ GPT-2 perform more better!
 ### **Second Image: Cosine Similarity Distributions without punctuation (BERT vs GPT-2)**
 
 ![Compare BERT and GPT-2 Cosine Similarity Distribution without punctuation](images/Compare_BERT_and_GPT-2_Cosine_Similarity_Distribution_without_punctuation.png)
+
+---
+
+### **Question4**
+
+Data:
+
+url_list = [
+    "https://en.wikipedia.org/wiki/Tesla,_Inc.",
+    "https://en.wikipedia.org/wiki/Battery_electric_vehicle",
+    "https://en.wikipedia.org/wiki/Elon_Musk",
+    "https://en.wikipedia.org/wiki/Tesla_Model_S",
+    "https://en.wikipedia.org/wiki/Energy_storage",
+    "https://en.wikipedia.org/wiki/Tesla_Automation",
+    "https://en.wikipedia.org/wiki/Main_Page",
+    "https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page",
+    "https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=US&uselang=en&wmf_medium=sidebar&wmf_source=donate&wmf_campaign=C13_en.wikipedia.org",
+    "https://en.wikipedia.org/wiki/Help:Contents",
+    "https://wikimediafoundation.org"
+]
+
+In the above url_list, I mostly choose wiki website that is related to Tesla.
+
+Labels show in below:
+labels = {1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0}
+
+## Case1 : using pre-defined relevant words
+When calculating TF-IDF, I use pre-defined words as relevant words.
+
+['tesla', 'electric', 'vehicle', 'elon', 'musk', 'battery']
+
+Training Accuracy 1.0
+Testing Accuracy:  0.8
+
+Training Result:
+Train Precision :  1.0
+Train Recall 1.0
+Train F1 1.0
+
+Testing Result:
+Testing Precision 1.0
+Testing Recall 0.6666666666666666
+Testing F1 Score 0.8
+
+![Test Case 1](images/Q4_test_case1.png)
+
+## Case1 : using automated defined relevant words
+When calculating TF-IDF, I do not use pre-defined words as relevant words.
+
+vectorizer = TfidfVectorizer(max_features=100, stop_words='english')
+
+This way limits the number of features (unique words) to the top 100 most important ones based on TF-IDF scores. This ensures that only the most relevant words are kept, improving computational efficiency and reducing noise.
+
+Training Accuracy 1.0
+Testing Accuracy:  0.6
+
+Training Result:
+Train Precision :  1.0
+Train Recall 1.0
+Train F1 1.0
+
+Testing Result:
+Testing Precision 0.6
+Testing Recall 1.0
+Testing F1 Score 0.7499999999999999
+
+![Test Case 2](images/Q4_test_case2.png)
