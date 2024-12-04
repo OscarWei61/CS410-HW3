@@ -29,6 +29,8 @@ Based on the given results, here’s the analysis:
 ### **Conclusion**
 Given the lower mean RMSE and comparable stability, **tanh** is the better choice of activation function for this dataset and task. It minimizes prediction errors while maintaining consistent performance, making it more suitable for further experimentation or application.
 
+---
+
 ### **Question2**
 
 ### **Data without puntuation**
