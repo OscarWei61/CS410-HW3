@@ -86,6 +86,16 @@ GPT-2 perform more better!
 
 ---
 
+### **Question3**
+
+Top 5 terms:
+![Top Five Terms](images/Top_5_Terms.png)
+
+Topic Distance:
+![Topic Distance](images/Topic_Distance.png)
+
+
+---
 ### **Question4**
 
 Data:
@@ -129,7 +139,7 @@ Testing F1 Score 0.8
 
 ![Test Case 1](images/Q4_test_case1.png)
 
-## Case1 : using automated defined relevant words
+## Case2 : using automated defined relevant words
 When calculating TF-IDF, I do not use pre-defined words as relevant words.
 
 vectorizer = TfidfVectorizer(max_features=100, stop_words='english')
